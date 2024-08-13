@@ -60,7 +60,7 @@ ul li::before{
     border-radius:50%;
     width:15px;
     height:15px;
-    background-image: url(img/undo.png);
+    background-image: url(undo.png);
     background-size: cover;
     background-position: center;
     top: 13px;
@@ -74,7 +74,7 @@ ul li.task{
    
 }
 ul li.task::before{
-    background-image: url(img/mark.png);
+    background-image: url(mark.png);
     width:20px;
     height:20px;
     background-size: cover;
