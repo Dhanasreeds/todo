@@ -1,0 +1,98 @@
+*{
+   margin: 0;
+   padding: 0;
+   font-family: Georgia;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(120deg, black, rgb(37, 37, 156),rgb(39, 27, 70) ) ;
+    padding: 10px;}
+.items{
+    width: 100%;
+    padding: 25px;
+    max-width: 400px;
+    background-color: white;
+    margin: 100px auto 20px;
+    border-radius: 10px; 
+    font-size: large;
+    margin-bottom: 5px;
+}
+.content{
+    background-color: rgb(219, 215, 215);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    margin: 10px;
+
+}
+#indata{
+   flex: 1;
+    border: none;
+    outline: none;
+    background:transparent;
+    padding: 5px; 
+    margin: 3px;
+}
+button{
+    background-color:rgb(36, 27, 132) ;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 20px;  
+    cursor: pointer;
+}
+ul li{
+     list-style: none;
+     padding: 12px 8px 12px 30px;
+     cursor: pointer;
+     font-size: medium;
+     user-select: none;
+     position: relative;
+    
+    
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    border-radius:50%;
+    width:15px;
+    height:15px;
+    background-image: url(img/undo.png);
+    background-size: cover;
+    background-position: center;
+    top: 13px;
+    left: 8px;
+   
+}
+ul li.task{
+    color: rgb(10, 10, 10);
+    text-decoration: line-through;
+ 
+   
+}
+ul li.task::before{
+    background-image: url(img/mark.png);
+    width:20px;
+    height:20px;
+    background-size: cover;
+    background-position: center;
+    top: 13px;
+    
+  
+}
+span{ 
+    position: absolute;
+    right: 0;
+    align-items: end;
+    padding: 6px 15px;
+    background-color: rgb(219, 215, 215);
+    border-radius: 12px;
+    text-decoration: none !important ;
+}
+span:hover{
+    background-color:rgb(36, 27, 132)  ;
+    color: white;
+}
